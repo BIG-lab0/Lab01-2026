@@ -1,9 +1,20 @@
 #include <stdio.h> 
 
-int salario_minimo = printf("Digite o valor do seu salário minímo"); 
-int salario_bruto = printf("Digite o valor do seu salário bruto");
-int salario_final = salario_bruto / salario_minimo;
+int main(){
 
-printf(salario_final);
+    int salario_minimo;
+    int salario_bruto;
+    int salario_final;
 
-return 0 
+    printf("Digite o valor do seu salario minimo\n"); 
+    scanf("%d", &salario_minimo);
+
+    printf("Digite o valor do seu salario bruto\n");  
+    scanf("%d", &salario_bruto);
+
+    salario_final = salario_bruto / salario_minimo;
+
+    printf("Quantidade de salarios minimos: %d\n", salario_final);
+
+    return 0;
+}
